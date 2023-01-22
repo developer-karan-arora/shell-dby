@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂🎂 Happy Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bottle.css" />
+  </head>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+  <body>
+    <div class="section-one-container">
+      <div class="birthdaycard section-one">
+        <div class="cardfront">
+          <div class="happy">
+            <img src="./frontBg.jpg" alt="" />
+          </div>
+        </div>
+        <!-- end cardfront -->
+        <div class="cardinside">
+          <h3 class="back">HAPPY BIRTHDAY!</h3>
+          <br />
+          <p>[ Bottle ]</p>
+          <br />
+          <div class="bottle">
+            <img src="./bottle.png" alt="" />
+          </div>
+          <p>May all of your dreams come true!</p>
+        </div>
+      </div>
+      <div class="scroolDown">
+        <p>Checkout Card</p>
+        <p>&</p>
+        <p>Scroll Down</p>
+      </div>
+    </div>
+    <!-- end birthdaycard -->
+    <div class="section-two-container">
+        <div class="carousel">
+            <div class="carousel__cards">
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/img-2.webp" alt="oops!!" >
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/img-1.png" alt="oops!!" style="background-color: aliceblue;">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/img-4.jfif" alt="oops!!">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/yo.jfif" alt="oops!!">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/goodNight.jfif" alt="oops!!">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="bottle.png" alt="oops!!" style="background-color: white;">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider//img-7.jfif" alt="oops!!">
+              </div>
+              <div class="carousel__card">
+                <img class="carousel__img"
+                     src="slider/img-3.jfif" alt="oops!!">
+              </div>
+          
+            </div>
+            <div class="carousel__control">
+              <button class="carousel__btn carousel__btn--back">&#8678; Prev</button>
+              <button class="carousel__btn carousel__btn--next">Next &#8680;</button>
+            </div>
+          </div>
+    </div>
+    <footer>
+        by krarora
+    </footer>
+  </body>
+   
+  <script>
+    const next = document.querySelector(".carousel__btn--next"),
+     back = document.querySelector(".carousel__btn--back"),
+     carousel = document.querySelector(".carousel__cards");
+   let angle = 0;
+   
+   next.addEventListener("click", () => {
+     angle -= 45;
+     carousel.style.transform = `translateZ(-20rem) rotateY(${angle}deg)`;
+   });
+   
+   back.addEventListener("click", () => {
+     angle += 45;
+     carousel.style.transform = `translateZ(-20rem) rotateY(${angle}deg)`;
+   });
+   
+       </script>
+</html>
